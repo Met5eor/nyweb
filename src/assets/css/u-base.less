@@ -1,0 +1,497 @@
+/**
+ * @description 基础样式库
+ * @author zhangli
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', STHeiti, 'Microsoft Yahei', Tahoma,
+    Simsun, sans-serif, Helvetica !important;
+  font-size: 12px !important;
+  color: @u-main-color;
+  overflow-x: hidden;
+  background-color: @u-bg-color;
+}
+
+/* bug6571 */
+body {
+  .ant-calendar-picker-container {
+    .ant-calendar-header {
+      position: static;
+    }
+  }
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-offset: -1px;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+/* 界面布局 */
+.u-page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: @u-bg-color;
+}
+
+.u-pos-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.u-inline-block {
+  display: inline-block;
+}
+
+.u-pointer {
+  cursor: pointer;
+}
+
+/* 界面对齐 */
+.u-tx-c {
+  text-align: center;
+}
+
+.u-tx-r {
+  text-align: right;
+}
+
+/* 元素边框 */
+.u-bd-1px {
+  position: relative;
+  border: 1px solid @u-border-color;
+}
+
+.u-bd-t {
+  position: relative;
+  border-top: 1px solid @u-border-color;
+}
+
+.u-bd-b {
+  position: relative;
+  border-bottom: 1px solid @u-border-color;
+}
+
+.u-bd-l {
+  position: relative;
+  border-left: 1px solid @u-border-color;
+}
+
+.u-bd-r {
+  position: relative;
+  border-right: 1px solid @u-border-color;
+}
+
+/* 字体大小 */
+.u-font-01 {
+  font-size: @u-font-01;
+  transform: scale(0.8);
+}
+
+.u-font-02 {
+  font-size: @u-font-02;
+  transform: scale(0.8);
+}
+
+.u-font-03 {
+  font-size: @u-font-02;
+  transform: scale(0.8);
+}
+
+.u-font-1 {
+  font-size: @u-font-1;
+}
+
+.u-font-2 {
+  font-size: @u-font-2;
+}
+
+.u-font-3 {
+  font-size: @u-font-3;
+}
+
+/* 外间距 */
+.u-mar-5 {
+  margin: @u-mp-5;
+}
+
+.u-mar-t5 {
+  margin-top: @u-mp-5;
+}
+
+.u-mar-r5 {
+  margin-right: @u-mp-5;
+}
+
+.u-mar-b5 {
+  margin-bottom: @u-mp-5;
+}
+
+.u-mar-l5 {
+  margin-left: @u-mp-5;
+}
+
+.u-mar,
+.u-mar-20 {
+  margin: @u-mp-20;
+}
+
+.u-mar-l,
+.u-mar-l20 {
+  margin-left: @u-mp-20;
+}
+
+.u-mar-r,
+.u-mar-r20 {
+  margin-right: @u-mp-20;
+}
+
+.u-mar-t,
+.u-mar-t20 {
+  margin-top: @u-mp-20;
+}
+
+.u-mar-b,
+.u-mar-b20 {
+  margin-bottom: @u-mp-20;
+}
+
+.u-mar-10 {
+  margin: @u-mp-10;
+}
+
+.u-mar-l10 {
+  margin-left: @u-mp-10;
+}
+
+.u-mar-r10 {
+  margin-right: @u-mp-10;
+}
+
+.u-mar-t10 {
+  margin-top: @u-mp-10;
+}
+
+.u-mar-b10 {
+  margin-bottom: @u-mp-10;
+}
+
+.u-mar-30 {
+  margin: @u-mp-30;
+}
+
+.u-mar-l30 {
+  margin-left: @u-mp-30;
+}
+
+.u-mar-r30 {
+  margin-right: @u-mp-30;
+}
+
+.u-mar-t30 {
+  margin-top: @u-mp-30;
+}
+
+.u-mar-b30 {
+  margin-bottom: @u-mp-30;
+}
+
+.u-mar-40 {
+  margin: @u-mp-40;
+}
+
+.u-mar-l40 {
+  margin-left: @u-mp-40;
+}
+.u-mar-l60 {
+  margin-left: 60px;
+}
+
+.u-mar-r40 {
+  margin-right: @u-mp-40;
+}
+
+.u-mar-t40 {
+  margin-top: @u-mp-40;
+}
+
+.u-mar-b40 {
+  margin-bottom: @u-mp-40;
+}
+
+.u-mar-50 {
+  margin: @u-mp-50;
+}
+
+.u-mar-l50 {
+  margin-left: @u-mp-50;
+}
+
+.u-mar-r50 {
+  margin-right: @u-mp-50;
+}
+
+.u-mar-t50 {
+  margin-top: @u-mp-50;
+}
+
+.u-mar-b50 {
+  margin-bottom: @u-mp-50;
+}
+
+.u-padd-5 {
+  padding: @u-mp-5;
+}
+
+.u-padd-t5 {
+  padding-top: @u-mp-5;
+}
+
+.u-padd-r5 {
+  padding-right: @u-mp-5;
+}
+
+.u-padd-b5 {
+  padding-bottom: @u-mp-5;
+}
+
+.u-padd-l5 {
+  padding-left: @u-mp-5;
+}
+
+.u-padd-10 {
+  padding: @u-mp-10;
+}
+
+.u-padd-l10 {
+  padding-left: @u-mp-10;
+}
+
+.u-padd-r10 {
+  padding-right: @u-mp-10;
+}
+
+.u-padd-t10 {
+  padding-top: @u-mp-10;
+}
+
+.u-padd-b10 {
+  padding-bottom: @u-mp-10;
+}
+
+.u-padd,
+.u-padd-20 {
+  padding: @u-mp-20;
+}
+
+.u-padd-l,
+.u-padd-l20 {
+  padding-left: @u-mp-20;
+}
+
+.u-padd-r,
+.u-padd-r20 {
+  padding-right: @u-mp-20;
+}
+
+.u-padd-t,
+.u-padd-t20 {
+  padding-top: @u-mp-20;
+}
+
+.u-padd-b,
+.u-padd-b20 {
+  padding-bottom: @u-mp-20;
+}
+
+.u-padd-30 {
+  padding: @u-mp-30;
+}
+
+.u-padd-l30 {
+  padding-left: @u-mp-30;
+}
+
+.u-padd-r30 {
+  padding-right: @u-mp-30;
+}
+
+.u-padd-t30 {
+  padding-top: @u-mp-30;
+}
+
+.u-padd-b30 {
+  padding-bottom: @u-mp-30;
+}
+
+.u-padd-40 {
+  padding: @u-mp-40;
+}
+
+.u-padd-l40 {
+  padding-left: @u-mp-40;
+}
+
+.u-padd-r40 {
+  padding-right: @u-mp-40;
+}
+
+.u-padd-t40 {
+  padding-top: @u-mp-40;
+}
+
+.u-padd-b50 {
+  padding-bottom: @u-mp-50;
+}
+
+.u-padd-50 {
+  padding: @u-mp-50;
+}
+
+.u-padd-l50 {
+  padding-left: @u-mp-50;
+}
+
+.u-padd-r50 {
+  padding-right: @u-mp-50;
+}
+
+.u-padd-t50 {
+  padding-top: @u-mp-50;
+}
+
+.u-padd-b50 {
+  padding-bottom: @u-mp-50;
+}
+
+/* 元素滚动 */
+.u-scroll-y {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.u-scroll-x {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 元素隐藏 */
+.u-hide {
+  display: none !important;
+}
+
+.u-of {
+  overflow: hidden;
+}
+
+.u-auto {
+  overflow: auto;
+}
+
+/* 元素加粗 */
+.u-bold {
+  font-weight: bold;
+}
+
+/* 元素阴影 */
+.u-shadow {
+  box-shadow: 0 0 4px #eee;
+}
+
+.u-shadow-rb {
+  box-shadow: 2px 2px 4px #eee;
+}
+
+.u-shadow-b {
+  box-shadow: 0px 2px 4px #eee;
+}
+
+.u-shadow-r {
+  box-shadow: 2px 0px 4px #eee;
+}
+
+/* 行高 */
+.u-line1 {
+  line-height: 20px;
+}
+
+.u-line2 {
+  line-height: 24px;
+}
+
+.u-line3 {
+  line-height: 28px;
+}
+
+/** 文字间距 **/
+.u-letter-1 {
+  letter-spacing: 2px;
+}
+
+.u-letter-2 {
+  letter-spacing: 4px;
+}
+
+.u-letter-3 {
+  letter-spacing: 6px;
+}
+
+/**
+ * 元素只显示一行，两行，三行多余的隐藏
+ */
+.u-te {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.u-te2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.u-te3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.red {
+  border: 1px solid red;
+}

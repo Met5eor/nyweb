@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>会员特权</title>
+    <link rel="stylesheet" href="//cdn.upchinaproduct.com/assert/swiper/3.4.0/swiper.min.css">
+    <link rel="stylesheet" href="./css/style-v3.css">
+    <link rel="stylesheet" href="./css/style-v4.css">
+    <style type="text/css">
+      .eruda-container .eruda-entry-btn{
+          left: 0!important;
+      }
+    </style>
+    <script type="text/javascript">
+        /*设置rem适配*/
+        (function () {
+            function setREM() {
+                var html = document.documentElement;
+                var htmlW = html.clientWidth;
+                html.style.fontSize = htmlW / 7.5 + 'px';
+            }
+            setREM();
+            window.addEventListener('resize', setREM, false);
+        })();
+    </script>
+</head>
+
+<body ontouchstart>
+    <div class="fixed_head">
+        <div class="list_wrap">
+            <div class="list_item cur" data-id="0">
+                <div class="item_avator"><img src="./images/list_icon1.png"></div>
+                <div class="item_name">红黄白股池</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="1">
+                <div class="item_avator"><img src="./images/list_icon2.png"></div>
+                <div class="item_name">五星股票池</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="2">
+                <div class="item_avator"><img src="./images/list_icon3.png"></div>
+                <div class="item_name">竞价先机</div>
+                <div class="item_pt">APP+PC</div>
+            </div>
+            <div class="list_item" data-id="3">
+                <div class="item_avator"><img src="./images/list_icon4.png"></div>
+                <div class="item_name">板块先机</div>
+                <div class="item_pt">APP+PC</div>
+            </div>
+            <div class="list_item" data-id="4">
+                <div class="item_avator"><img src="./images/list_icon5.png"></div>
+                <div class="item_name">超短盯盘/高级盯盘</div>
+                <div class="item_pt">APP+PC</div>
+            </div>
+            <div class="list_item" data-id="5">
+                <div class="item_avator"><img src="./images/list_icon6.png"></div>
+                <div class="item_name">涨停因子</div>
+                <div class="item_pt red">App</div>
+            </div>
+            <div class="list_item" data-id="6">
+                <div class="item_avator"><img src="./images/list_icon7.png"></div>
+                <div class="item_name">个股琅琊榜</div>
+                <div class="item_pt">APP+PC</div>
+            </div>
+            <div class="list_item" data-id="7">
+                <div class="item_avator"><img src="./images/list_icon8.png"></div>
+                <div class="item_name">板块琅琊榜</div>
+                <div class="item_pt">APP+PC</div>
+            </div>
+            <div class="list_item" data-id="8">
+                <div class="item_avator"><img src="./images/list_icon9.png"></div>
+                <div class="item_name">短线历史数据</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="9">
+                <div class="item_avator"><img src="./images/list_icon10.png"></div>
+                <div class="item_name">市场情绪</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="10">
+                <div class="item_avator"><img src="./images/list_icon11.png"></div>
+                <div class="item_name">涨停推演</div>
+                <div class="item_pt zi">PC</div>
+            </div>
+            <div class="list_item" data-id="11">
+                <div class="item_avator"><img src="./images/list_icon12.png"></div>
+                <div class="item_name">超短复盘/牛牛复盘</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+           <!--  <div class="list_item" data-id="12">
+                <div class="item_avator"><img src="./images/list_icon13.png"></div>
+                <div class="item_name">研报私房菜</div>
+                <div class="item_pt">App+PC</div>
+            </div> -->
+            <!-- <div class="list_item" data-id="13">
+                <div class="item_avator"><img src="./images/list_icon14.png"></div>
+                <div class="item_name">深度低吸策略</div>
+                <div class="item_pt">App+PC</div>
+            </div> -->
+            <!-- <div class="list_item" data-id="14">
+                <div class="item_avator"><img src="./images/list_icon15.png"></div>
+                <div class="item_name">贵宾直播室</div>
+                <div class="item_pt">App+PC</div>
+            </div> -->
+            <div class="list_item" data-id="15">
+                <div class="item_avator"><img src="./images/list_icon16.png"></div>
+                <div class="item_name">专属微信服务圈</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="16">
+                <div class="item_avator"><img src="./images/list_icon17.png"></div>
+                <div class="item_name">会员折扣</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="17">
+                <div class="item_avator"><img src="./images/list_icon18.png"></div>
+                <div class="item_name">尊享会员抽奖</div>
+                <div class="item_pt zi">PC</div>
+            </div>
+            <div class="list_item" data-id="18">
+                <div class="item_avator"><img src="./images/list_icon19.png"></div>
+                <div class="item_name">专属标识</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="19">
+                <div class="item_avator"><img src="./images/list_icon21.png"></div>
+                <div class="item_name">趋势盯盘</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="29">
+                <div class="item_avator"><img src="./images/icon_qsabc.png"></div>
+                <div class="item_name">趋势ABC指标</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="20">
+                <div class="item_avator"><img src="./images/list_icon22.png"></div>
+                <div class="item_name">涨停挖掘</div>
+                <div class="item_pt">App</div>
+            </div>
+            <div class="list_item" data-id="22">
+                <div class="item_avator"><img src="./images/list_icon23.png"></div>
+                <div class="item_name">神秘C点股池</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="23">
+                <div class="item_avator"><img src="./images/list_icon24.png"></div>
+                <div class="item_name">神秘C点指标</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="24">
+                <div class="item_avator"><img src="./images/list_icon25.png"></div>
+                <div class="item_name">5分钟课程</div>
+                <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item" data-id="25">
+                <div class="item_avator"><img src="./images/list_icon26.png"></div>
+                <div class="item_name">手机L2指标</div>
+                <div class="item_pt red">正式版专享</div>
+            </div>
+            <div class="list_item" data-id="26">
+                <div class="item_avator"><img src="./images/list_icon27.png"></div>
+                <div class="item_name">自选股琅琊榜</div>
+                <div class="item_pt red">敬请期待</div>
+            </div>
+            <div class="list_item" data-id="27">
+                <div class="item_avator"><img src="./images/list_icon28.png"></div>
+                <div class="item_name">攻守道股池</div>
+                <div class="item_pt red">敬请期待</div>
+            </div>
+            <div class="list_item" data-id="28">
+                <div class="item_avator"><img src="./images/list_icon29.png"></div>
+                <div class="item_name">超级L2<span>(PC版)</span></div>
+                <div class="item_pt red">正式版专享</div>
+            </div>
+            <div class="list_item" data-id="31">
+              <div class="item_avator"><img src="./images/list_icon_tstc.png"></div>
+              <div class="item_name">特色题材</div>
+              <div class="item_pt">App+PC</div>
+            </div>
+            <div class="list_item">
+                <div class="item_avator"><img src="./images/list_icon20.png"></div>
+                <div class="item_name">敬请期待</div>
+            </div>
+        </div>
+    </div>
+    <div class="pg">
+        <div class="tab_cnt tab_cnt0">
+            <img src="./images/tab1_cnt_1.png" alt="">
+            <img src="./images/tab1_cnt_2.png" alt="">
+            <div class="modular swiper">
+                <img class="bg_img" src="./images/tab1_cnt_sw_bg.png" alt="">
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/tab1_cnt_sw1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab1_cnt_sw2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab1_cnt_sw3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_cnt tab_cnt1">
+            <img src="./images/tab2_cnt_1.png?v=2" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt2">
+            <img src="./images/tab3_cnt_1.png"  id="jjxj" class="tab3_cnt_1" alt="">
+            <div id="bkxj">
+                <img src="./images/tab3_cnt_2.png" alt="">
+                <img src="./images/tab3_cnt_3.png" alt="">
+            </div>
+        </div>
+        <div class="tab_cnt tab_cnt4">
+            <div class="modular click_wrap">
+                <img src="./images/gjdp_img1.png?v=1" alt="">
+                <a href="upchina://wxapp/mini?userName=gh_c2c24c1e700e&path=pages/activity/apptoserver/apptoserver&id=0&type=0" target="_blank" class="btn btn_wx"></a>
+           </div>
+        </div>
+        <div class="tab_cnt tab_cnt5">
+            <div class="modular swiper6">
+                <img src="./images/tab6_cnt_1.png" alt="">
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/tab6_cnt_sw1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab6_cnt_sw2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_cnt tab_cnt6">
+           <div class="modular click_wrap">
+                <img src="./images/gglyb_img1.png?v=1" alt="">
+                <a href="upchina://wxapp/mini?userName=gh_c2c24c1e700e&path=pages/activity/apptoserver/apptoserver&id=0&type=0" target="_blank" class="btn btn_wx"></a>
+           </div>
+            <div class="modular swiper_modular swiper_gglyb">
+                <img src="./images/gglyb_sw_bg.png" alt="">
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/gglyb_sw1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/gglyb_sw2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/gglyb_img2.png" alt=""> 
+        </div>
+        <div class="tab_cnt tab_cnt7">
+            <div class="modular click_wrap">
+                 <img src="./images/bklyb_img1.png" alt="">
+                 <a href="upchina://wxapp/mini?userName=gh_c2c24c1e700e&path=pages/activity/apptoserver/apptoserver&id=0&type=0" target="_blank" class="btn btn_wx"></a>
+            </div>
+             <img src="./images/bklyb_img2.png" alt=""> 
+             <img src="./images/bklyb_img3.png" alt=""> 
+         </div>
+        <div class="tab_cnt tab_cnt8">
+            <div class="modular swiper9">
+                <img src="./images/tab9_cnt_bg.png" alt="">
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/tab9_cnt_sw1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab9_cnt_sw2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab9_cnt_sw3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_cnt tab_cnt9">
+            <img src="./images/tab10_cnt_1.png" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt10">
+            <div class="modular swiper11">
+                <img src="./images/tab11_cnt_bg.png" alt="">
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/tab11_cnt_sw1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab11_cnt_sw2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab11_cnt_sw3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_cnt tab_cnt11">
+            <img src="./images/tab12_cnt_1.png?v=2" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt12">
+            <!-- <img src="./images/tab13_cnt_1.png" id="ybsfc" alt=""> -->
+            <img src="./images/tab13_cnt_2.png" id="sddxcl" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt14">
+            <div class="modular swiper15">
+                <img src="./images/tab15_cnt_1.png" alt="">
+                <img src="./images/tab15_cnt_bg_sw.png" alt="">
+                <img src="./images/tab15_cnt_2.png" alt="">
+                <div class="content lunbo">
+                    <div class="video_wrap">
+                        <div class="tag">新用户限免经典战法抢先看</div>
+                        <video preload="auto" id="main_video" class="main_video" controls="controls" src="http://upfv.upchina.com/202005/202005080800.mp4"></video>
+                    </div>
+                    <ul class="tab">
+                        <li class="active">
+                            <p>1.看点攻击波战法，擒获汉缆股份连板大肉。</p>
+                        </li>
+                        <li class="">
+                            <p>2.复盘锁牛股，怒抓反包龙头汇金通。</p>
+                        </li>
+                        <li class="">
+                            <p>3.明日个股推演。</p>
+                        </li>
+                    </ul>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/tab15_cnt_sw1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab15_cnt_sw2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab15_cnt_sw3.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab15_cnt_sw4.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_cnt tab_cnt15">
+            <div class="modular vipcenter">
+                 <img src="./images/zswxfwq_img1.png" alt="">
+                 <a href="upchina://wxapp/mini?userName=gh_c2c24c1e700e&path=pages/activity/apptoserver/apptoserver&id=0&type=0" target="_blank" class="btn btn_vipcenter"></a>
+            </div>
+         </div>
+        <div class="tab_cnt tab_cnt16">
+            <img src="./images/tab17_cnt_1.png?v=3" alt="">
+            <a href="https://cdn.upchinaproduct.com/acm/202006/gnnvipcenterh5/index.html" class="btn btn_discount" target="_blank">查看更多会员折扣商品</a>
+        </div>
+        <div class="tab_cnt tab_cnt17">
+            <img src="./images/tab18_cnt_1.png?v=1" alt="">
+            <a href="https://cdn.upchinaproduct.com/acm/202011/gnnpcxzrw/index.html" target="_blank" class="btn btn_use">立即使用</a>
+        </div>
+        <div class="tab_cnt tab_cnt18">
+            <img src="./images/tab19_cnt_1.png" alt="">
+        </div>
+         <div class="tab_cnt tab_cnt19">
+            <img src="./images/tab_cnt_qsdp_1.png" alt="">
+            <img src="./images/tab_cnt_qsdp_2.png" alt="">
+            <div class="tab_sct">
+              <img src="./images/tab_cnt_qsdp_3.png" alt="">
+
+              <div id="spqsdpsz" class="tab_sp swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./images/pic_tab_cnt_qsdp_spsz_1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./images/pic_tab_cnt_qsdp_spsz_2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./images/pic_tab_cnt_qsdp_spsz_3.png" alt=""></div>
+                </div>
+              
+                <div id="spqsdpszpg" class="swiper-pagination"></div>
+              </div>
+            </div>
+            <img src="./images/tab_cnt_qsdp_4.png" alt="">
+            <img src="./images/tab_cnt_qsdp_5.png" alt="">
+            <img src="./images/tab_cnt_qsdp_6.png" alt="" id="qsabc">
+        </div>
+        <div class="tab_cnt tab_cnt20">
+            <img src="./images/tab21_cnt_1.png" alt="">
+            <img src="./images/tab21_cnt_2.png" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt22">
+            <img src="./images/tab22_cnt_1.png" alt="">
+            <img src="./images/tab22_cnt_2.png" alt="">
+            <img src="./images/tab22_cnt_3.png" alt="" id="smcdzb">
+            <img src="./images/tab22_cnt_4.png" alt="">
+            <img src="./images/tab22_cnt_5.png" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt24">
+            <img src="./images/tab24_cnt_1.png" alt="">
+            <img src="./images/tab24_cnt_2.png" alt="">
+            <img src="./images/tab24_cnt_3.png" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt25">
+            <img src="./images/tab25_cnt_1.png" alt="">
+            <img src="./images/tab25_cnt_2.png" alt="">
+            <img src="./images/tab25_cnt_3.png" alt="">
+            <img src="./images/tab25_cnt_4.png" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt26">
+            <img src="./images/tab26_cnt_1.png" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt27">
+            <img src="./images/tab27_cnt_1.png" alt="">
+            <img src="./images/tab27_cnt_2.png" alt="">
+            <img src="./images/tab27_cnt_3.png" alt="">
+        </div>
+        <div class="tab_cnt tab_cnt28">
+            <img src="./images/tab28_cnt_1.png" alt="">
+            <div class="modular swiper">
+                <img class="bg_img" src="./images/tab28_cnt_2.png" alt="">
+                <div class="content">
+                    <div class="swiper-container swiper28">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/tab28_cnt_sw1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab28_cnt_sw2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/tab28_cnt_sw3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-button-prev swiper-button-prev28"></div>
+                        <div class="swiper-button-next swiper-button-next28"></div>
+                        <div class="swiper-pagination swiper-pagination28"></div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/tab28_cnt_3.png" alt="">
+        </div>
+        <!-- 特色题材 -->
+        <div class="tab_cnt tab_cnt_tstc tab_cnt31">
+          <!-- <img src="./images/tab28_cnt_1.png" alt="">
+          <div class="modular swiper">
+            <img class="bg_img" src="./images/tab28_cnt_2.png" alt="">
+            <div class="content">
+              <div class="swiper-container swiper28">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./images/tab28_cnt_sw1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./images/tab28_cnt_sw2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./images/tab28_cnt_sw3.png" alt=""></div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev28"></div>
+                <div class="swiper-button-next swiper-button-next28"></div>
+                <div class="swiper-pagination swiper-pagination28"></div>
+              </div>
+            </div>
+          </div>
+          <img src="./images/tab28_cnt_3.png" alt=""> -->
+
+          <img src="./images/tab_cnt_tstc_1.png" alt="">
+          <div class="tab_sct tab_sctsz ">
+            <div class="tab_sp_tip">左右滑动查看</div>
+            <div id="sptstcsz" class="tab_sp swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/pic_tab_cnt_tstc_spsz_1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/pic_tab_cnt_tstc_spsz_2.png" alt=""></div>
+              </div>
+
+              <div id="sptstcszpg" class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="tab_sct tab_sctgn ">
+            <div class="tab_sp_tip">左右滑动查看</div>
+            <div id="sptstcgn" class="tab_sp swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/pic_tab_cnt_tstc_spgn_1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/pic_tab_cnt_tstc_spgn_2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/pic_tab_cnt_tstc_spgn_3.png" alt=""></div>
+              </div>
+
+              <div id="sptstcgnpg" class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- 198专属价格 -->
+    <div class="footer discount_footer none">
+        <div class="about_svip">
+            <div class="info">*尊享会员SVIP专属特权,<span>解锁免费使用</span></div>
+            <a href="https://cdn.upchinaproduct.com/acm/202006/gnnvipcenterh5/index.html" class="btn_about" data-track="newsecondtqlq_about1">了解会员详情&gt</a>
+        </div>
+        <div class="price_box">
+            <div class="btn_buy" data-track="newsecondtqlq_buy1">
+                <div class="price_txt">
+                    198元/14天<span>专属体验价</span>
+                </div>
+                <div class="cd">
+                    <span class="cd_txt">优惠倒计时</span>
+                    
+                   <!--  <span class="cd_obj cd_duy">00</span>
+                    <span class="cd_txt">:</span> -->
+                    <span class="cd_obj cd_hour">00</span>
+                    <span class="cd_txt">:</span>
+                    <span class="cd_obj cd_minute">00</span>
+                    <span class="cd_txt">:</span>
+                    <span class="cd_obj cd_second">00</span>
+                    <span class="cd_txt">:</span>
+                    <span class="cd_obj cd_millisecond">00</span>
+                </div>
+            </div>
+            <div class="btn_share" data-track="newsecondtqlq_share1">分享免费看7天</div>
+        </div>
+    </div>
+
+    <!-- 买过198无2116权限日常价格 -->
+    <div class="footer normal_footer none">
+        <div class="about_svip">
+            <div class="info">*尊享会员SVIP专属特权,<span>解锁免费使用</span></div>
+            <a href="https://cdn.upchinaproduct.com/acm/202006/gnnvipcenterh5/index.html" class="btn_about" data-track="newsecondtqlq_about2">了解会员详情&gt</a>
+        </div>
+        <div class="price_box normal_price">
+            <div class="btn_buy" data-track="newsecondtqlq_buy2">
+                <div class="price_txt">
+                    日常价:1598元/月
+                </div>
+            </div>
+            <div class="btn_share" data-track="newsecondtqlq_share2">分享免费看7天</div>
+        </div>
+    </div>
+    <!-- 买过198有2116权限续费价格 -->
+    <div class="footer renew_footer none">
+         <div class="about_svip">
+            <div class="info">*尊享会员SVIP专属特权,<span>剩余时长<i></i>天</span></div>
+            <a href="https://cdn.upchinaproduct.com/acm/202006/gnnvipcenterh5/index.html" class="btn_about" data-track="newsecondtqlq_about3">了解会员详情&gt</a>
+        </div>
+        <div class="price_box normal_price">
+            <div class="btn_buy" data-track="newsecondtqlq_buy3">
+                <div class="price_txt">
+                    续费价：1598元/月
+                </div>
+            </div>
+            <div class="btn_share" data-track="newsecondtqlq_share3">分享免费看7天</div>
+        </div>
+    </div>
+
+    <!-- 领取成功-7天 -->
+    <div class="mask mask_lq">
+        <div class="pop_box">
+            <img src="./images/pop_bg_svip.png">
+            <a href="https://cdn.upchinaproduct.com/vipcenter/gnn/h5/index.html" class="pop_btn">点击立即体验</a>
+            <div class="btn_close"></div>
+        </div>
+    </div>
+    <!-- 购买成功-14天 回调-->
+    <div class="mask mask_buy">
+        <div class="pop_box">
+            <img src="./images/pop_bg_open.png">
+            <a href="https://cdn.upchinaproduct.com/vipcenter/gnn/h5/index.html" class="pop_btn">点击立即使用</a>
+            <div class="btn_close"></div>
+        </div>
+    </div>
+    
+    <!-- 新人专享悬浮 -->
+    <div class="btn fryh fryk">
+        <img class="fryh_img" src="./images/pic_new_lq.png" alt="">
+        <div class="cd">
+          <span class="cd_obj cd_hour">00</span>
+          <span class="cd_obj cd_minute">00</span>
+          <span class="cd_obj cd_second">00</span>
+          <span class="cd_obj cd_millisecond">00</span>
+        </div>
+    </div>
+    <!-- 新人专享悬浮--优惠购买> -->
+    <div class="btn fryh frlryh">
+        <img class="fryh_img" src="./images/pic_new_buy.png" alt="">
+        <div class="cd">
+          <span class="cd_obj cd_hour">00</span>
+          <span class="cd_obj cd_minute">00</span>
+          <span class="cd_obj cd_second">00</span>
+          <span class="cd_obj cd_millisecond">00</span>
+        </div>
+    </div>
+    <!-- 右侧下载悬浮 -->
+    <div class="sider_bar" data-track="newsecondtqlq_down">
+        <a href="https://cdn.upchinaproduct.com/acm/202102/xzszxhy/index.html">
+            <img src="./images/pic_down.png">
+        </a>
+        <div class="btn_close"></div>
+    </div>
+
+    <script src="//cdn.upchinaproduct.com/assert/zepto/1.2.0/zepto.min.js"></script>
+    <script src="https://cdn.upchina.com/front/1911ddxq/js/zepto.fx.js"></script>
+    <script src="//cdn.upchina.com/activitypage/plugin/uphybrid.min.js"></script>
+    <script src="//cdn.upchina.com/front/swiper/swiper-3.4.2.min.js"></script>
+    <!-- <script type="text/javascript" src="//sharetest.upchina.com/share.js?bus=gnn_gnfxshy"></script> -->
+    <script type="text/javascript" src="//sharecomm.upchina.com/share.js?bus=gnn_gnfxshy"></script>
+    <script type="text/javascript" src="https://cdn.upchina.com/ztjb_app/lib/eruda.min.js"></script>
+    <script> eruda.init(); </script>
+    <script  type="text/javascript">
+      var request = {
+          QueryString: function(val) {
+              var url = window.location.search;
+              var re = new RegExp("" + val + "=([^&?]*)", "ig");
+              return url.match(re) && url.match(re)[0].substr(val.length + 1);
+          }
+      };
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return (false);
+      }
+      function changeURLArg(url, arg, arg_val) {
+        var pattern = arg + '=([^&]*)';
+        var replaceText = arg + '=' + arg_val;
+        if (url.match(pattern)) {
+          var tmp = '/(' + arg + '=)([^&]*)/gi';
+          tmp = url.replace(eval(tmp), replaceText);
+          return tmp;
+        } else {
+          if (url.match('[\?]')) {
+            return url + '&' + replaceText;
+          } else {
+            return url + '?' + replaceText;
+          }
+        }
+        return url + '\n' + arg + '\n' + arg_val;
+      }
+      $(function(){
+          var u = navigator.userAgent;
+          var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+          var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+          
+          var tabindex = request.QueryString("tabindex");
+          if(tabindex){
+              changetab(parseInt(tabindex),$('.list_wrap ').find(".list_item[data-id='"+tabindex+"']"),'dingwei');
+          }
+          $('.list_wrap .list_item').forEach(function(item){
+              $(item).on('click',function(e){
+                  var index = $(this).data('id');
+                  if(typeof index == 'undefined'){ return false; }; 
+                  //通过tabindex参数来标识页面路由（伪路由）
+                  var url = changeURLArg(location.href, 'tabindex', index);
+                  window.history.pushState({url: url}, {}, url);
+
+                  if(index!=21){
+                      if(!$(this).hasClass('cur')){
+                          changetab(index,this)
+                      }
+                  }
+              })
+          })
+          var videList=[
+              "http://upfv.upchina.com/202005/202005080800.mp4",
+              "http://upfv.upchina.com/202005/202005080801.mp4",
+              "http://upfv.upchina.com/202005/202005080802.mp4"
+          ]
+          $(".tab li").click(function() {
+              $(".main_video").trigger('pause');
+              var index=$(this).index();
+              $(".main_video").attr("src",videList[index]);
+              $(".main_video").trigger('play');
+              $(this).addClass("active").siblings().removeClass("active");
+          });
+          
+          function changetab(index,ele,dingwei){
+              console.log(index,ele,dingwei);
+              $('.list_wrap .list_item').removeClass('cur');
+              $(ele).addClass('cur');
+              if(dingwei){
+                  var offsetLeft = $(ele)[0].offsetLeft;
+                  $(".list_wrap").scrollLeft(offsetLeft);
+              }
+              
+              $('.pg .tab_cnt').hide();
+              if(index === 2){
+                  $('.pg .tab_cnt2').show();
+                  // location.href="#jjxj";
+                  setTimeout(function () {
+                    $(window).scrollTop($("#jjxj").position().top);
+                  }, 10);
+              }else if(index === 3){
+                  $('.pg .tab_cnt2').show();
+                  // location.href="#bkxj";
+                  setTimeout(function () {
+                    $(window).scrollTop($("#bkxj").position().top);
+                  }, 10);
+              }else if(index === 12){
+                  $('.pg .tab_cnt12').show();
+                  // location.href="#ybsfc";
+                  setTimeout(function () {
+                    $(window).scrollTop($("#ybsfc").position().top);
+                  }, 10);
+              }else if(index === 13){
+                  $('.pg .tab_cnt12').show();
+                  // location.href="#sddxcl";
+                  setTimeout(function () {
+                    $(window).scrollTop($("#sddxcl").position().top);
+                  }, 10);
+              }else if(index===23){
+                  $('.pg .tab_cnt22').show();
+                  // location.href="#smcdzb";
+                  setTimeout(function () {
+                    $(window).scrollTop($("#smcdzb").position().top);
+                  }, 10);
+              }else if(index===29){
+                  $('.pg .tab_cnt19').show();
+                  // location.href="#qsabc";
+                  setTimeout(function () {
+                    $(window).scrollTop($("#qsabc").position().top);
+                  }, 10);
+              }else{
+                  $(window).scrollTop(0);
+                  $('.pg .tab_cnt'+index).show();
+              }
+              
+              if(index===4){
+                  new Swiper(".swiper_gjdp .swiper-container", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '.swiper_gjdp .swiper-pagination',
+                  });
+              }
+              if(index===5){
+                  new Swiper(".swiper6 .swiper-container", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '.swiper6 .swiper-pagination',
+                  });
+              }
+              if(index===6){
+                  new Swiper(".swiper_gglyb .swiper-container", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '.swiper_gglyb .swiper-pagination',
+                  });
+              }
+              if(index===8){
+                  new Swiper(".swiper9 .swiper-container", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '.swiper9 .swiper-pagination',
+                  });
+              }
+              if(index===10){
+                  new Swiper(".swiper11 .swiper-container", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '.swiper11 .swiper-pagination',
+                  });
+              }
+              if(index===14){
+                  new Swiper(".swiper15 .swiper-container", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '.swiper15 .swiper-pagination',
+                  });
+              }
+              if(index===28){
+                  new Swiper(".swiper28", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '.swiper-pagination',
+                      prevButton:'.swiper-button-prev28',
+                      nextButton:'.swiper-button-next28',
+                  });
+              }
+              if(index===31){
+                  new Swiper("#sptstcsz", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '#sptstcszpg',
+                  });
+                  new Swiper("#sptstcgn", {
+                      loop: false,
+                      paginationClickable: true,
+                      autoplay: 4000,
+                      pagination: '#sptstcgnpg',
+                  });
+              }
+          }
+
+          $(".swiper-button-prev28").click(function(){
+              // sp28.slideNext();
+          });
+
+          var isSvip;
+          var isBuy;
+          
+          var isCheckLogin;
+          var powerDays;
+          var new_txt="一键领取7天尊享会员特权";
+          var new_price_txt="新人专享：198元/2周";
+          var old_txt="立即开通会员";
+          
+          login('',neworderfilter,getPowerInfo);
+          //登录 url：订单链接,clickEvent:是否点击事件，cb：回调函数，cbOption：回调函数2,clickEvent是否点击事件
+          function login(url,cb,cbOption,clickEvent) {
+              console.log("login========")
+              try {
+                  upNativeComm.exec("UPUser.getUserInfo", {
+                      callback: function (code, param) {
+                          var param = JSON.parse(param);
+                          if (param && param["uid"]) {
+                              console.log("登陆成功:",param["uid"]);
+                              isCheckLogin=true;
+                              //userInfo=param;
+                              if (url) {
+                                  console.log("打开订单")
+                                  cb(url, 2);
+                              } else {
+                                  console.log("去查权限类似的回调函数")
+                                  if(cbOption){
+                                      cb(param, cbOption);
+                                  }else{
+                                      cb(param);
+                                  }
+                              }
+                          }else{
+                              //去登陆(进页面不强制登陆，点击按钮强制登陆)
+                              if(clickEvent){
+                                  try {
+                                      upNativeComm.exec("Navigation.userLogin",{
+                                          callback: function (code, param) {
+                                              var param = JSON.parse(param);
+                                              if (param.ret === 0) {
+                                                  console.log("游客登陆成功",param["uid"]);
+                                                  isCheckLogin=true;
+                                                  //userInfo = data;
+                                                  //"去查权限类似的回调函数"
+                                                  if(cbOption){
+                                                      cb(param, cbOption);
+                                                  }else{
+                                                      cb(param);
+                                                  }
+                                              }else{
+                                                  //未登陆
+                                                  $(".discount_footer").removeClass("none");
+                                              }
+                                          }
+                                      });
+                                  } catch (err) {
+                                      console.log('Navigation.userLogin 错误')
+                                  }
+                              }else{
+                                  //未登陆
+                                  $(".discount_footer").removeClass("none");
+                              }
+                              
+                          }
+                      }
+                  })
+              } catch (err) {
+                console.log('暂未登录');
+              }
+          }
+          //用户权限查询(所有用户)
+          function getPowerInfo(param) {
+              console.log("getPowerInfo==================")
+              //isCheckPower = true;
+              if (param) {
+                  $.ajax({
+                      url: "https://a.upchina.com/activitysqx/allmodule",
+                      type: "get",
+                      async: false,
+                      data: {
+                          sign: param.sign,
+                          token: param.token,
+                      },
+                      success: function (data) {
+                          console.log("getPowerInfodata:" + JSON.stringify(data));
+                          if (data.ret == 0) {
+                              for (var i = 0; i < data.data.length; i++) {
+                                var now = new Date().getTime();
+                                if (data.data[i].mid == "2116") {
+                                      //不管权限是否过期,都算老用户
+                                      if (data.data[i].endtime > now) {
+                                          isSvip = true;
+                                          powerDays=dateDifference(now,data.data[i].endtime)
+                                      }
+                                }
+                              }
+                              console.log("isSvip:", isSvip);
+                              if(isBuy){
+                                  if(isSvip){
+                                      $(".renew_footer .info span").html("剩余时长<i>"+powerDays+"</i>天")
+                                      $(".renew_footer").removeClass("none");
+                                  }else{
+                                      $(".normal_footer").removeClass("none");
+                                  }
+                              }else{
+                                  //优惠价格
+                                  if(isSvip){
+                                      $(".discount_footer .info span").html("剩余时长<i>"+powerDays+"</i>天");
+                                  }
+                                  $(".discount_footer").removeClass("none");
+
+                              }
+                          }
+                      },
+                      error: function (err) {
+                        console.log("getPowerInfoerr" + err);
+                      }
+                  })
+              } else {
+                console.log(param);
+              }
+          }
+          //是否购买过新人专享价(老用户查询),需要查询2次，一次220，一次80都算买过
+          function neworderfilter(param,cb,orderStatus) {
+              console.log("neworderfilter==================>",param)
+              var status='';
+
+              if(orderStatus){
+                  status=orderStatus
+              }else{
+                  status=220;
+              }
+              //查产品权限
+              $.ajax({
+                  url: "https://a.upchina.com/activitysqx/neworderfilter",
+                  type: 'get',
+                  data: {
+                      sign: param.sign,
+                      token: param.token,
+                      status:status,
+                      // bussid: '202101/gnnxnjhvip'
+                      bussid: '202112/gnnhyjhyxr'
+                  },
+                  success: function (rsp) {
+                      console.log("neworderfilter.data:",JSON.stringify(rsp));
+                      if (rsp && rsp.data && rsp.data.length) {
+                        var data = rsp.data;
+                        var isHas;
+
+                        for(var i = 0; i < data.length; i++){
+                          var item = data[i];
+
+                          if(item.isBuy){
+                            isHas = true;
+                            isBuy = true;
+                            cb(param);
+                            break;
+                          }
+                        }
+                        if(!isHas){
+                          if (!orderStatus) {
+                            neworderfilter(param, cb, 80)
+                          } else {
+                            cb(param);
+                          }
+                        }
+                      } else {
+                          //接口数据未返回需要的数据情况算老用户
+                          isBuy=true;
+                          cb(param);
+                      }
+                      
+                  },
+                  error: function (err) {
+                      console.log("neworderfilter.err",err);
+                  }
+              })
+          }
+          //时间差计算
+          function dateDifference(faultDate,completeTime){
+              var stime =new Date(faultDate).getTime();
+              var etime = new Date(completeTime).getTime();
+              var usedTime = etime - stime;  //两个时间戳相差的毫秒数
+              var days=Math.floor(usedTime/(24*3600*1000));
+              //计算出小时数
+              var leave1=usedTime%(24*3600*1000);    //计算天数后剩余的毫秒数
+              var hours=Math.floor(leave1/(3600*1000));
+              //计算相差分钟数
+              var leave2=leave1%(3600*1000);        //计算小时数后剩余的毫秒数
+              var minutes=Math.floor(leave2/(60*1000));
+              var time = days;
+              return time;
+          }
+        //   var linkurl = `http://dragontiger.dev.test.upchina.com/project-newsecondtqlq.html#/wx?business=gnn_gnfxshy&tabindex=${tabindex}`;
+          var linkurl = `https://cdn.upchina.com/front/2022/4/project-newsecondtqlq/prod/index.html#/wx?business=gnn_gnfxshy&tabindex=${tabindex}`;
+          var upshare = new shareApi.initSharePlugin({
+              gift: true, //是否显示分享得会员的icon
+              gifttext: '<span><img src="{giftIcon}" alt=""></span>分享得3天尊享会员 |您已邀请 <span class="invite_num">{inviteNum}</span> 位用户', //邀请奖励文案
+              giftemptytext: '<span><img src="{giftIcon}" alt=""></span>分享得3天尊享会员|您已邀请 <span class="invite_num">{inviteNum}</span> 位用户', //未邀请用户时奖励文案
+              giftcoefficient: 1, //系数
+              desc: '邀请1位好友可得3天尊享会员（实战直播版）权限',
+              rewardtext: '即日起登录后分享到微信、朋友圈，邀请1位新用户加入股牛牛，在新用户首次完成微信登录App后，您将获得3天尊享会员SVIP（实战直播版）权限!',
+              title: "帮我解锁股牛牛股票尊享会员权限吧~", //标题
+              summary: "高胜率股池、视频解盘、短线课程免费得！", //描述
+              method: 'Share.link', // Share.image   分享图片 Share.text  分享文本 Share.link 图文混合，带有链接
+              linkurl: linkurl, //跳转链接 收费：4652  音频：5236  多文字：5271
+              imageurl: "", //图片地址
+              authorname: "flywan",
+              authornickname: "flywan",
+              business: "gnn_gnfxshy", //gnn_L2
+              id: new Date().getTime(), //必选，业务下要分享内容的唯一标识，例如：观点id
+              source: 55048, //渠道号,这个渠道号为被邀请新用户的注册渠道
+              env: "production",
+              plats: ["wechat", "circle"], //显示哪些分享方式
+              isStopBodyScroll: false, //是否禁止遮罩滚动
+              isCanAnonymousShare: true,
+          });
+          $('.btn_share').click(function () {
+              if(isCheckLogin){
+                  upshare.show();
+              }else{
+                  try {
+                      upNativeComm.exec("Navigation.userLogin",{
+                          callback: function (code, param) {
+                              var param = JSON.parse(param);
+                              if (param.ret === 0) {
+                                  //执行初始化事件
+                                  login('',neworderfilter,getPowerInfo,true);
+                              }
+                          }
+                      });
+                  } catch (err) {
+                      console.log('Navigation.userLogin 错误')
+                  }
+              }
+              
+          });
+          // alert("business:gnn_gnfxshy")
+          //弹窗关闭
+          $(".mask .btn_close").on("click",function(){
+              $(".mask").hide();
+          })
+
+          
+          var newOrder="https://uppay.upchina.com/unifiedpay/2168f09b64433ee7ae9199d1484027e5?ch=56006";//新人价
+          var normalOrder="https://uppay.upchina.com/unifiedpay/c0097ae1293375821a585935acd03fde?ch=56006";//日常价安卓
+          var normalOrderIos="https://uppay.upchina.com/unifiedpay/c0097ae1293375821a585935acd03fde?ch=56006";//日常价IOS
+          var renewOrder = "https://uppay.upchina.com/unifiedpay/f000de12428e321a05088e3c716a43b4ch?=56006";  //续费价
+          // var renewOrder="https://uppay.upchina.com/unifiedpay/82824696d7b777827f088f8ba0809597?ch=56006";//续费价安卓
+          // var renewOrderIos="https://uppay.upchina.com/unifiedpay/7fa91c00021ec34b59f9608ae093e883?ch=56006";//续费价IOS
+
+          //支付回调
+          var callbackUrl = window.location.href;
+          var timestamp = request.QueryString("timestamp")||false;//获取链接后面的时间戳
+          var showFlag=localStorage.getItem(timestamp);//查询时间戳是否被存储过
+          console.log("timestamp:",timestamp,"showFlag:",showFlag)
+          if(timestamp&&!showFlag){
+              localStorage.setItem(timestamp,timestamp);//存储时间戳
+              //弹窗提示用户购买成功
+              $(".mask_buy").show();
+          }
+
+          //底部购买或领取按钮
+          $('.btn_buy').click(function(){
+              console.log("btn_foot点击,","isSvip:",isSvip,"isBuy:",isBuy)
+            if(isCheckLogin){
+                  if(isBuy){
+                      //购买过198优惠价
+                      if(isSvip){
+                          //有权限续费价格
+                          orderSplice(renewOrder,1);
+                      }else{
+                          //无权限日常价格
+                          if(isiOS){
+                              orderSplice(normalOrderIos,1);
+                          }else{
+                              orderSplice(normalOrder,1);
+                          }
+                      }
+                  }else{
+                      //未购买过198优惠价
+                      //新人专享价需要支付回调
+                      var date = new Date().getTime();
+                      var orderCallback=encodeURIComponent(callbackUrl+'?timestamp='+date);
+                      orderSplice(newOrder,1,orderCallback);
+                  }
+            }else{
+                  try {
+                      upNativeComm.exec("Navigation.userLogin",{
+                          callback: function (code, param) {
+                              var param = JSON.parse(param);
+                              if (param.ret === 0) {
+                                  //执行初始化事件
+                                  login('',neworderfilter,getPowerInfo,true);
+                              }
+                          }
+                      });
+                  } catch (err) {
+                      console.log('Navigation.userLogin 错误')
+                  }
+              }
+          })
+          
+          // 轮播
+          new Swiper(".swiper .swiper-container", {
+              loop: false,
+              paginationClickable: true,
+              autoplay: 4000,
+              pagination: '.swiper .swiper-pagination',
+          });
+          var spqsdpsz = new Swiper("#spqsdpsz", {
+            loop: false,
+            paginationClickable: true,
+            autoplay: 4000,
+            pagination: '#spqsdpszpg',
+          });
+
+          //倒计时
+          // var $day = $(".cd_day");
+          var $hour = $(".cd_hour");
+          var $minute = $(".cd_minute");
+          var $second = $(".cd_second");
+          var $millisecond = $(".cd_millisecond");
+          function formatDate(now) {
+              var year = now.getFullYear();
+              var month = now.getMonth() + 1;
+              month = month.toString().length === 1 ? '0' + month : month;
+              var date = now.getDate();
+              date = date.toString().length === 1 ? '0' + date : date;
+              return year + "/" + month + "/" + date;
+          }
+          function countdown(options) {
+              var options = concat({}, options || {});
+              var timeStart = Date.parse(options.timeStart.replace(/-/g, "/")),
+                timeEnd = Date.parse(options.timeEnd.replace(/-/g, "/")),
+                funBefore = options.funBefore,
+                funBetween = options.funBetween,
+                funAfter = options.funAfter;
+              timer();
+
+              function concat(objA, objB) {
+                  if (objA && objB) {
+                      for (var key in objB) {
+                        objA[key] = objB[key]
+                      }
+                  }
+                  return objA
+              }
+
+              function timer() {
+                  var timeNow = new Date().getTime();
+                  timeStart = new Date(timeStart).getTime();
+                  timeEnd = new Date(timeEnd).getTime();
+                  if (timeEnd - timeStart < 0) {
+                      return setTimeout(timer, 1000 / 60)
+                  }
+                  if (timeNow < timeStart) {
+                      if (typeof funBefore === "function") {
+                        funBefore(format(timeStart - timeNow))
+                      }
+                      return setTimeout(timer, 1000 / 60)
+                  }
+                  if (timeNow > timeEnd) {
+                      if (typeof funAfter === "function") {
+                        funAfter(format(timeNow - timeEnd))
+                      }
+                      return setTimeout(timer, 1000 / 60)
+                  }
+                  if (typeof funBetween === "function") {
+                      funBetween(format(timeEnd - timeNow))
+                  }
+                  setTimeout(timer, 1000 / 60)
+              }
+
+              function format(data) {
+                  var result;
+                  var dataDay = Math.floor(data / (24 * 60 * 60 * 1000));
+                  data = data - (dataDay * 24 * 60 * 60 * 1000);
+                  var dataHour = Math.floor(data / (60 * 60 * 1000));
+                  data = data - (dataHour * 60 * 60 * 1000);
+                  var dataMinute = Math.floor(data / (60 * 1000));
+                  data = data - (dataMinute * 60 * 1000);
+                  var dataSecond = Math.floor(data / (1000));
+                  data = data - (dataSecond * 1000);
+                  var dataMilliSecond = Math.floor(data / 10);
+                  result = {
+                      day: convertLen(dataDay),
+                      hour: convertLen(dataHour),
+                      minute: convertLen(dataMinute),
+                      second: convertLen(dataSecond),
+                      millisecond: convertLen(dataMilliSecond)
+                  };
+                  return result
+              }
+
+              function convertLen(data) {
+                return data < 10 ? "0" + data : data
+              }
+          }
+          countdown({
+              timeStart: formatDate(new Date()) + ' 00:00:00',
+              timeEnd: formatDate(new Date()) + " 23:59:59",
+              funBefore: function (data) {
+                $hour.html(data.hour);
+                $minute.html(data.minute);
+                $second.html(data.second);
+                $millisecond.html(data.millisecond);
+              },
+              funBetween: function (data) {
+                $hour.html(data.hour);
+                $minute.html(data.minute);
+                $second.html(data.second);
+                $millisecond.html(data.millisecond);
+              },
+              funAfter: function (data) {
+                $hour.html("00");
+                $minute.html("00");
+                $second.html("00");
+                $millisecond.html("00");
+              }
+          });
+
+          //头部滑动悬浮
+          function setHeaderFloat() {
+            //页面参考高度
+            var refHeight = $(window).scrollTop();
+            //头部隐藏的位置（一屏高度）
+            var hideHeight = $(window).height();
+            $(window).scroll(function () {
+              var scHeight = $(this).scrollTop();
+
+              if (scHeight > hideHeight && scHeight > refHeight) {
+                $('.fixed_head').addClass('hide');
+              } else {
+                $('.fixed_head').removeClass('hide');
+              }
+
+              refHeight = $(window).scrollTop();
+            });
+          }
+          setHeaderFloat();
+          
+      })
+
+
+      // 百度统计
+      var _hmt = _hmt || [];
+      (function () {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?30e0c256bfc8ad60e33fcad5da3ad51d";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+          try {
+              $('body').on('click', '[data-track]', function () {
+                  var label = $(this).data("track");
+                  _hmt && _hmt.push(['_trackEvent', label, 'click']);
+              })
+          } catch (e) { }
+      })();
+
+      //文字提示信息
+      function textTip(str, t, callBack) {
+          t = t || 2000;
+          var dom = document.createElement("p");
+          dom.setAttribute('class', 'text-tip');
+          document.body.appendChild(dom);
+          var mytip = document.querySelector('.text-tip')
+
+          mytip.style.display = "block";
+          mytip.innerHTML = str;
+          var tipHeight = mytip.offsetHeight;
+
+          //文字两行或两行以上
+          if((tipHeight - 20) / 18 > 1) {
+              mytip.style.width = "55%";
+          }
+          setTimeout(function() {
+              mytip.style.display = "none";
+              mytip.parentNode.removeChild(mytip);
+              if(callBack) {
+                  callBack();
+              }
+          }, t);
+      }
+      //增加渠道统计
+      function orderSplice(orderUrl, type,cbUrl) {
+          /*
+          * orderUrl  订单地址
+          * type      1:代表h5 2代表pc
+          */
+          //获取URL问号后面的参数值，最后以对象键值对的方式存储
+          ~function (pro) {
+              function QueryURLParameter() {
+                  var reg = /([^?&#=]+)=([^?&#=]+)/g;
+                  var obj = {};
+                  this.replace(reg, function () {
+                      obj[arguments[1]] = arguments[2];
+                  });
+                  return obj;
+              }
+              pro.QueryURLParameter = QueryURLParameter;
+          }(String.prototype);
+          var urlQuery = window.location.href.QueryURLParameter();
+          var chString = '',
+              ch = urlQuery['orderch'] || '';
+          if (ch&&cbUrl) {
+              //渠道号存在,支付回调存在
+              if (orderUrl.indexOf('?') == -1) {
+                  chString = '?ch=' + ch+'&callback=' + cbUrl;
+              } else {
+                  chString = '&ch=' + ch+'&callback=' + cbUrl;
+              }
+          }else if(ch){
+              //渠道号存在
+              if (orderUrl.indexOf('?') == -1) {
+                  chString = '?ch=' + ch;
+              } else {
+                  chString = '&ch=' + ch;
+              }
+          }else if(cbUrl){
+              //支付回调
+              if (orderUrl.indexOf('?') == -1) {
+                  chString = '?callback=' + cbUrl;
+              } else {
+                  chString = '&callback=' + cbUrl;
+              }
+          }
+
+          if (type === 1) {
+              window.open(orderUrl + chString)
+              // upNativeComm.exec("WebView.open", {
+              //     'url': orderUrl + chString
+              // });
+          } else {
+              upNativeComm.exec("open.webview", {
+                  'url': orderUrl + chString
+              });
+          }
+      }
+    </script>
+</body>
+
+</html>

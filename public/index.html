@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.upchina.com/lib/jquery-3.2.1.min.js"></script>
+  <!-- <script src="https://cdn.upchina.com/lib/uphybrid.min-1.0.0.js"></script> -->
+  <!-- <script src="https://cdn.upchinaproduct.com/test/test/webNativeCommunicatePC-1.js"></script> -->
+  <script src="https://sharecomm.upchina.com/share.js"></script>
+  <!-- <script src="https://cdn.bootcss.com/html2canvas/0.4.1/html2canvas.js"></script> -->
+  <script src="https://cdn.upchina.com/front/2022theme/production/fonts/html2canvas.js"></script>
+  <title></title>
+</head>
+
+<style>
+  .sharing p {
+    /* line-height: 0.6 !important; */
+  }
+  .sharing .share_cnt .share_close{
+    top: -32px!important;
+  }
+</style>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?30e0c256bfc8ad60e33fcad5da3ad51d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+      $('body').on('click', '[data-track]', function() {
+          var label = $(this).data("track");
+          // BA事件
+          _hmt && _hmt.push(['_trackEvent', label, 'click']);
+      });
+  })();
+</script>
+</html>

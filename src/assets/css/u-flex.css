@@ -1,0 +1,130 @@
+/*******************v1.0 2020/09/05 by:zl******************/
+
+/**定义伸缩盒子模型**/
+.u-fx {
+  display: flex;
+}
+
+/**定义垂直方向盒子模型**/
+.u-fx-ver {
+  display: flex;
+  flex-direction: column;
+}
+
+/**水平垂直居中**/
+.u-fx-ac-jc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/**水平垂直居底**/
+.u-fx-ac-je {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/**水平局右垂直居中**/
+.u-fx-ae-jc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/**盒子模型水平反向布局**/
+.u-fx-revX {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/**盒子模型垂直反向布局**/
+.u-fx-revY {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/**垂直居中**/
+.u-fx-ac {
+  display: flex;
+  align-items: center;
+}
+
+/**垂直居下**/
+.u-fx-ae {
+  display: flex;
+  align-items: flex-end;
+}
+
+/**元素水平居中**/
+.u-fx-jc {
+  display: flex;
+  justify-content: center;
+}
+
+/**元素水平居左**/
+.u-fx-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/**元素水平居右**/
+.u-fx-je {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/**元素两端对齐**/
+.u-fx-jsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**元素以相同间距分配对齐**/
+.u-fx-jsa {
+  display: flex;
+  justify-content: space-around;
+}
+
+/**子元素固定宽度弹性布局且换行**/
+.u-fx-wp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/**弹性盒子等分比例分配**/
+.u-fx-f1 {
+  flex: 1;
+  -webkit-flex: 1;
+  position: relative;
+}
+
+.u-fx-f2 {
+  flex: 2;
+  -webkit-flex: 2;
+  position: relative;
+}
+
+.u-fx-f3 {
+  flex: 3;
+  -webkit-flex: 3;
+  position: relative;
+}
+.u-fx-f4 {
+  flex: 4;
+  -webkit-flex: 4;
+  position: relative;
+}
+.u-fx-f5 {
+  flex: 5;
+  -webkit-flex: 5;
+  position: relative;
+}
+.u-fx-f6 {
+  flex: 6;
+  -webkit-flex:6;
+  position: relative;
+}
