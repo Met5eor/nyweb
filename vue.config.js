@@ -19,6 +19,7 @@ let proxyConfig =
     ? proxyTest
     : proxyDev;
 let isPord = process.env.NODE_ENV === "production";
+console.log(isPord,'==============')
 module.exports = {
   publicPath: "./",
   outputDir: "./public/dist",
